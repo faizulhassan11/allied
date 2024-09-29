@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Examination</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .logo img {
+        max-width: 150px;
+        height: auto;
+      }
+      .title-section h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+      .title-section h3 {
+        font-size: 1.25rem;
+      }
+      .info-section p {
+        font-size: 1.1rem;
+        margin: 0 15px; /* Added margin for spacing */
+      }
+      .info-section span {
+        font-weight: bold;
+      }
+      add-padding {
+        padding-left: 500px;
+        width: 500px;
+      }
+      @media (max-width: 768px) {
+        .logo img {
+          max-width: 80px;
+        }
+        .title-section h1 {
+          font-size: 1rem;
+        }
+        .title-section h3 {
+          font-size: 1rem;
+        }
+      }
+      header {
+        text-align: center;
+      }
+      .main-content {
+        flex: 1;
+        overflow-y: auto;
+        padding: 20px; /* Added padding for content */
+      }
+      .form-check {
+        margin-bottom: 1rem; /* Added spacing between radio options */
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="container-fluid bg-primary text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-2 text-center">
+            <div class="logo">
+              <img
+                src="./images/logo1.png"
+                alt="College Logo"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-10 text-center">
+            <div class="title-section">
+              <h1 class="display-4">ONLINE EXAMINATION</h1>
+              <h3 class="text-decoration-underline">
+                QADRI COLLEGE OF HEALTH SCIENCES KARACHI
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row d-flex justify-content-center text-start px-0 mx-0">
+          <div class="col-12 col-md-4 mb-2 text-center">
+            <p class="mb-1">
+              Student Name: <span class="fw-bold">John Doe</span>
+            </p>
+            <p class="mb-1">
+              Semester: <span class="fw-bold">5th Semester</span>
+            </p>
+          </div>
+
+          <div class="col-12 col-md-4 mb-2 text-center">
+            <p class="mb-1">
+              Course: <span class="fw-bold">Bachelor of Science</span>
+            </p>
+            <p class="mb-1">
+              Subject: <span class="fw-bold">Pharmacology</span>
+            </p>
+          </div>
+
+          <div class="col-12 col-md-4 mb-2 text-center">
+            <p class="mb-1">Session: <span class="fw-bold">2023-2024</span></p>
+            <p class="mb-1">Test: <span class="fw-bold">Midterm Exam</span></p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Exam Info Section -->
+    <div class="container-fluid bg-warning my-2 py-3">
+      <div class="container">
+        <div class="row d-flex justify-content-around">
+          <div class="col-6 col-md-4 text-left">
+            <p class="mb-0">Time Remaining</p>
+            <p class="fw-bold mb-0">01:20:40</p>
+          </div>
+          <div class="col-6 col-md-4 text-left">
+            <p class="mb-0">Question #</p>
+            <p class="fw-bold mb-0">10 OUT OF 30</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <main class="main-content container-fluid my-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <form action="">
+              <h5>Question # 01</h5>
+              <p>
+                What distinguishes non-probability sampling methods from
+                probability sampling methods? What distinguishes non-probability
+                sampling methods from probability sampling methods? What
+                distinguishes non-probability sampling methods from probability
+                sampling methods?
+              </p>
+              <hr class="my-4" />
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="answer"
+                  id="optionA"
+                />
+                <label class="form-check-label" for="optionA">
+                  A. Non-probability sampling methods do not rely on random
+                  selection.
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="answer"
+                  id="optionB"
+                />
+                <label class="form-check-label" for="optionB">
+                  B. Probability sampling methods use random selection.
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="answer"
+                  id="optionC"
+                />
+                <label class="form-check-label" for="optionC">
+                  C. Non-probability sampling methods are less accurate.
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="answer"
+                  id="optionD"
+                />
+                <label class="form-check-label" for="optionD">
+                  D. Probability sampling methods are more time-consuming.
+                </label>
+              </div>
+
+              <div class="d-flex justify-content-between mt-4">
+                <div class="d-flex">
+                  <button
+                    type="button"
+                    class="btn btn-primary fw-bold border border-warning rounded-pill me-2"
+                  >
+                    <i class="bi bi-arrow-left-circle"></i> PREV
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary fw-bold border border-warning rounded-pill"
+                  >
+                    NEXT <i class="bi bi-arrow-right-circle"></i>
+                  </button>
+                </div>
+
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-danger fw-bold rounded-pill"
+                  >
+                    Submit <i class="bi bi-send"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

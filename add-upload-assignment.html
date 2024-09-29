@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Allied Institute Of Nursing And Health Sciences</title>
+
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/logo.jpeg" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/2.1.6/css/dataTables.dataTables.css"
+    />
+    
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <aside id="sidebar" class="expand">
+        <div class="d-flex justify-content-center align-items-center">
+          <!-- Sidebar Logo -->
+          <div class="sidebar-logo text-center py-4">
+            <a href="index.html" class="text-success">
+              <img
+              src="./images/logo.jpeg"
+                alt="Applied Logo"
+                class="img-fluid logo"
+              />
+            </a>
+          </div>
+
+          <button class="toggle-btn" type="button" title="Toggle Sidebar">
+            <i class="bi bi-grid"></i>
+          </button>
+        </div>
+        <ul class="sidebar-nav">
+         
+
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#finance"
+              aria-expanded="false"
+              aria-controls="finance"
+            >
+            <i class="bi bi-currency-dollar"></i>
+              <span>Finance</span>
+            </a>
+            <ul
+              id="finance"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a href="fees.html" class="sidebar-link">Fees</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="income.html" class="sidebar-link">Income</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="expenses.html" class="sidebar-link">Expenses</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="staff-salary.html" class="sidebar-link">Staff Salary</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="petty-cash.html" class="sidebar-link">Petty Cash</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="petty-cash-report.html" class="sidebar-link">Petty Cash Report</a>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#user-account"
+              aria-expanded="false"
+              aria-controls="user-account"
+            >
+            <i class="bi bi-people"></i>
+              <span>User Account</span>
+            </a>
+            <ul
+              id="user-account"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a href="student-record.html" class="sidebar-link">Student Record</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="staff-record.html" class="sidebar-link">Staff Record</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="student-account-information.html" class="sidebar-link">Student Account Information</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="staff-account-information.html" class="sidebar-link">Staff Account Information</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="create-faculty-account.html" class="sidebar-link">Create Faculty Account</a>
+              </li>
+            </ul>
+          </li>
+         
+
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#attendence"
+              aria-expanded="false"
+              aria-controls="attendence"
+            >
+            <i class="bi bi-calendar-check"></i>
+              <span>Attendence</span>
+            </a>
+            <ul
+              id="attendence"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a href="gpr-attendence.html" class="sidebar-link">GPR Attendence </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="manual-attendence.html" class="sidebar-link">Manual Attendence</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="add-lecture.html" class="sidebar-link">Add Lecture</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="leave.html" class="sidebar-link">Leave</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#add-view-course"
+              aria-expanded="false"
+              aria-controls="add-view-course"
+            >
+            <i class="bi bi-folder-plus"></i>
+              <span>Add/View Course</span>
+            </a>
+            <ul
+              id="add-view-course"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a href="course.html" class="sidebar-link">Add Course </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="academic-session.html" class="sidebar-link">Add Acedaminc Session</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#sms"
+              aria-expanded="false"
+              aria-controls="sms"
+            >
+            <i class="bi bi-chat-left-text"></i>
+              <span>SMS</span>
+            </a>
+            <ul
+              id="sms"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a href="send-individual.html" class="sidebar-link">Send Individual </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="login-information.html" class="sidebar-link">Login Information</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="fees-information.html" class="sidebar-link">Fees Information</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#qec"
+              aria-expanded="false"
+              aria-controls="qec"
+            >
+            <!-- <i class="bi bi-shield"></i> -->
+            <i class="bi bi-shield-check"></i>
+              <span>QEC</span>
+            </a>
+            <ul
+              id="qec"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a href="student-course-evalution.html" class="sidebar-link">Student Course Evaluation</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="teacher-evalution.html" class="sidebar-link">Teacher Evaluation</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="student-course-evalution-report.html" class="sidebar-link">Report Student Evaluation</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="teacher-evaluation-report.html" class="sidebar-link"
+                  >Report Teacher Evaluation</a
+                >
+              </li>
+
+             
+              <li class="sidebar-item"></li>
+                <a href="#" class="sidebar-link">Active <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  /></a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#reception"
+              aria-expanded="false"
+              aria-controls="reception"
+            >
+            <i class="bi bi-person-lines-fill"></i>
+            <span>Reception</span>
+
+            
+
+            </a>
+            <ul
+              id="reception"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+            
+             
+              <li class="sidebar-item">
+                <a href="letter-manager.html" class="sidebar-link">Letter Manager</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="inquiries-manager.html" class="sidebar-link">Inquireies Manager</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-bank"
+              aria-expanded="false"
+              aria-controls="question-bank"
+            >
+            <i class="bi bi-question-diamond"></i>
+              <span>Question Bank</span>
+            </a>
+            <ul
+              id="question-bank"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a href="add-mcqs-question.html" class="sidebar-link">Add MCQ Question </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="add-true-false-question.html" class="sidebar-link">Add True/False Question</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="generate-question.html" class="sidebar-link">Generate Question</a>
+              </li>
+             
+              <li class="sidebar-item">
+                <a href="set-header.html" class="sidebar-link">Set Header </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="active-deactive.html" class="sidebar-link">Active / Deactive</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="exam-report.html" class="sidebar-link">Exam Report</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="report-card.html" class="sidebar-link">Report Card</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#lms"
+              aria-expanded="false"
+              aria-controls="lms"
+            >
+            <i class="bi bi-book"></i>
+
+              <span>LMS</span>
+            </a>
+            <ul
+              id="lms"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a href="learning-lms.html" class="sidebar-link">Learning LMS </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="view-notes.html" class="sidebar-link">View Notes</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#upload-download"
+              aria-expanded="false"
+              aria-controls="upload-download"
+            >
+            <i class="bi bi-arrow-down-up"></i>
+              <span>Upload Download</span>
+            </a>
+            <ul
+              id="upload-download"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a href="upload-assignment.html" class="sidebar-link">Upload Assignment </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="download-assignment.html" class="sidebar-link">Download Asssignment</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#emi"
+              aria-expanded="false"
+              aria-controls="emi"
+            >
+            <i class="bi bi-credit-card"></i>
+            <span>EMI</span>
+            </a>
+            <ul
+              id="emi"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+             
+              <li class="sidebar-item">
+                <a href="remove.html" class="sidebar-link">Remove EMI</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar-item">
+            <a href="report.html" class="sidebar-link">
+              <i class="bi bi-file-earmark-text"></i>
+              <span>Report</span>
+            </a>
+          </li>
+        </ul>
+        <div class="sidebar-footer">
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-box-arrow-left"></i>
+            <span>Logout</span>
+          </a>
+        </div>
+      </aside>
+      <div class="main">
+        <nav class="navbar navbar-expand px-4 py-3">
+          
+          <div class="navbar-collapse collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                  <img src="./images/account.png" class="avatar img-fluid" alt="" />
+                </a>
+                <div class="dropdown-menu dropdown-menu-end rounded">
+                 
+                  <a href="#" class="dropdown-item">
+                    <i class="bi bi-person"></i>
+                    Profile
+                  </a>
+                   <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">
+                    <i class="bi bi-gear"></i>
+                    Setting
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">
+                    <i class="bi bi-box-arrow-left"></i>
+                    Logout
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+       
+     
+        <main class="content px-3 py-4">
+            <div class="container" id="dynamic-content">
+          
+                <!-- Back Button -->
+                <div class="mb-4">
+                    <a href="upload-assignment.html" class="btn btn-primary">
+                        <i class="bi bi-arrow-left"></i> 
+                    </a>
+                </div>
+          
+                <h3 class="card-title mb-4">Upload Assignment</h3>
+                <hr class="my-4">
+          
+                <!-- Lecture Registration Section -->
+                <div class="card shadow-sm mb-4 registration-card">
+                    <div class="card-body">
+          
+                        <form class="row g-3">
+          
+                           <!-- Letter ID -->
+                           <div class="col-md-6">
+                              <label for="letterId" class="form-label">Teacher ID</label>
+                              <input type="text" class="form-control" id="letterId" name="letterId" required>
+                          </div>
+            
+                            <!-- Submit Button -->
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary">Add</button>
+                                <button type="submit" class="btn btn-danger">Close</button>
+                            </div>
+          
+                        </form>
+                    </div>
+                </div>
+          
+            </div>
+          </main>
+          
+       
+           
+          
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row text-body-secondary">
+              <div class="col-6 text-start">
+                <a class="text-body-secondary" href=" #">
+                  <strong>Applied</strong>
+                </a>
+              </div>
+              <div class="col-6 text-end text-body-secondary d-none d-md-block">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item">
+                    <a class="text-body-secondary" href="#">Contact</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-body-secondary" href="#">About Us</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-body-secondary" href="#"
+                      >Terms & Conditions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.datatables.net/2.1.6/js/dataTables.js"></script>
+
+    <script src="script.js"></script>
+
+      
+
+  
+  </body>
+</html>

@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Allied Institute Of Nursing And Health Sciences</title>
+
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/logo.jpeg" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/2.1.6/css/dataTables.dataTables.css"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <aside id="sidebar" class="expand">
+        <div class="d-flex justify-content-center align-items-center">
+          <!-- Sidebar Logo -->
+          <div class="sidebar-logo text-center py-4">
+            <a href="index.html" class="text-success">
+              <img
+              src="./images/logo.jpeg"
+                alt="Applied Logo"
+                class="img-fluid logo"
+              />
+            </a>
+          </div>
+
+          <button class="toggle-btn" type="button" title="Toggle Sidebar">
+            <i class="bi bi-grid"></i>
+          </button>
+        </div>
+        <ul class="sidebar-nav">
+         
+
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#finance"
+              aria-expanded="false"
+              aria-controls="finance"
+            >
+            <i class="bi bi-currency-dollar"></i>
+              <span>Finance</span>
+            </a>
+            <ul
+              id="finance"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a href="fees.html" class="sidebar-link">Fees</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="income.html" class="sidebar-link">Income</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="expenses.html" class="sidebar-link">Expenses</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="staff-salary.html" class="sidebar-link">Staff Salary</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="petty-cash.html" class="sidebar-link">Petty Cash</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="petty-cash-report.html" class="sidebar-link">Petty Cash Report</a>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#user-account"
+              aria-expanded="false"
+              aria-controls="user-account"
+            >
+            <i class="bi bi-people"></i>
+              <span>User Account</span>
+            </a>
+            <ul
+              id="user-account"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a href="student-record.html" class="sidebar-link">Student Record</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="staff-record.html" class="sidebar-link">Staff Record</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="student-account-information.html" class="sidebar-link">Student Account Information</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="staff-account-information.html" class="sidebar-link">Staff Account Information</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="create-faculty-account.html" class="sidebar-link">Create Faculty Account</a>
+              </li>
+            </ul>
+          </li>
+         
+
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#attendence"
+              aria-expanded="false"
+              aria-controls="attendence"
+            >
+            <i class="bi bi-calendar-check"></i>
+              <span>Attendence</span>
+            </a>
+            <ul
+              id="attendence"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a href="gpr-attendence.html" class="sidebar-link">GPR Attendence </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="manual-attendence.html" class="sidebar-link">Manual Attendence</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="add-lecture.html" class="sidebar-link">Add Lecture</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="leave.html" class="sidebar-link">Leave</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#add-view-course"
+              aria-expanded="false"
+              aria-controls="add-view-course"
+            >
+            <i class="bi bi-folder-plus"></i>
+              <span>Add/View Course</span>
+            </a>
+            <ul
+              id="add-view-course"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a href="course.html" class="sidebar-link">Add Course </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="academic-session.html" class="sidebar-link">Add Acedamic Session</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#sms"
+              aria-expanded="false"
+              aria-controls="sms"
+            >
+            <i class="bi bi-chat-left-text"></i>
+              <span>SMS</span>
+            </a>
+            <ul
+              id="sms"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a href="send-individual.html" class="sidebar-link">Send Individual </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="login-information.html" class="sidebar-link">Login Information</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="fees-information.html" class="sidebar-link">Fees Information</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#qec"
+              aria-expanded="false"
+              aria-controls="qec"
+            >
+            <!-- <i class="bi bi-shield"></i> -->
+            <i class="bi bi-shield-check"></i>
+              <span>QEC</span>
+            </a>
+            <ul
+              id="qec"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a href="student-course-evalution.html" class="sidebar-link">Student Course Evaluation</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="teacher-evalution.html" class="sidebar-link">Teacher Evaluation</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="student-course-evalution-report.html" class="sidebar-link">Report Student Evaluation</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="teacher-evaluation-report.html" class="sidebar-link"
+                  >Report Teacher Evaluation</a
+                >
+              </li>
+
+             
+              <li class="sidebar-item"></li>
+                <a href="#" class="sidebar-link">Active <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  /></a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#reception"
+              aria-expanded="false"
+              aria-controls="reception"
+            >
+            <i class="bi bi-person-lines-fill"></i>
+            <span>Reception</span>
+
+            
+
+            </a>
+            <ul
+              id="reception"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+            
+             
+              <li class="sidebar-item">
+                <a href="letter-manager.html" class="sidebar-link">Letter Manager</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="inquiries-manager.html" class="sidebar-link">Inquireies Manager</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-bank"
+              aria-expanded="false"
+              aria-controls="question-bank"
+            >
+            <i class="bi bi-question-diamond"></i>
+              <span>Question Bank</span>
+            </a>
+            <ul
+              id="question-bank"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a href="add-mcqs-question.html" class="sidebar-link">Add MCQ Question </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="add-true-false-question.html" class="sidebar-link">Add True/False Question</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="generate-question.html" class="sidebar-link">Generate Question</a>
+              </li>
+             
+              <li class="sidebar-item">
+                <a href="set-header.html" class="sidebar-link">Set Header </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="active-deactive.html" class="sidebar-link">Active / Deactive</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="exam-report.html" class="sidebar-link">Exam Report</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="report-card.html" class="sidebar-link">Report Card</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#lms"
+              aria-expanded="false"
+              aria-controls="lms"
+            >
+            <i class="bi bi-book"></i>
+
+              <span>LMS</span>
+            </a>
+            <ul
+              id="lms"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a href="learning-lms.html" class="sidebar-link">Learning LMS </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="view-notes.html" class="sidebar-link">View Notes</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#upload-download"
+              aria-expanded="false"
+              aria-controls="upload-download"
+            >
+            <i class="bi bi-arrow-down-up"></i>
+              <span>Upload Download</span>
+            </a>
+            <ul
+              id="upload-download"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a href="upload-assignment.html" class="sidebar-link">Upload Assignment </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="download-assignment.html" class="sidebar-link">Download Asssignment</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#emi"
+              aria-expanded="false"
+              aria-controls="emi"
+            >
+            <i class="bi bi-credit-card"></i>
+            <span>EMI</span>
+            </a>
+            <ul
+              id="emi"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+             
+              <li class="sidebar-item">
+                <a href="remove.html" class="sidebar-link">Remove EMI</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar-item">
+            <a href="report.html" class="sidebar-link">
+              <i class="bi bi-file-earmark-text"></i>
+              <span>Report</span>
+            </a>
+          </li>
+        </ul>
+        <div class="sidebar-footer">
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-box-arrow-left"></i>
+            <span>Logout</span>
+          </a>
+        </div>
+      </aside>
+      <div class="main">
+        <nav class="navbar navbar-expand px-4 py-3">
+          
+          <div class="navbar-collapse collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                  <img src="./images/account.png" class="avatar img-fluid" alt="" />
+                </a>
+                <div class="dropdown-menu dropdown-menu-end rounded">
+                 
+                  <a href="#" class="dropdown-item">
+                    <i class="bi bi-person"></i>
+                    Profile
+                  </a>
+                   <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">
+                    <i class="bi bi-gear"></i>
+                    Setting
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">
+                    <i class="bi bi-box-arrow-left"></i>
+                    Logout
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+       
+     
+            <main class="content px-3 py-4">
+                <div class="container" id="dynamic-content">
+
+                  <h3 class="card-title mb-4">Student Registration Form</h3>
+                  <hr class="my-4">
+                    <!-- Student Registration Section -->
+                    <div class="card shadow-sm mb-4 registration-card">
+                        <div class="card-body">
+                           
+        
+                            <form class="row g-3">
+                                <!-- CNIC Number Input -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="cnic" class="form-label">CNIC Number</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="cnic" placeholder="Enter CNIC Number" aria-label="CNIC Number" required>
+                                        <button class="btn btn-primary" type="button" id="button-addon2">
+                                            <i class="bi bi-check-lg"></i>
+                                        </button>
+                                    </div>
+                                </div>
+        
+                                <!-- Course Section -->
+                                <h4 class="card-title mt-5">Course Information</h4>
+                                <hr class="my-2">
+        
+                                <div class="col-md-6">
+                                    <label for="course" class="form-label">Course</label>
+                                    <select class="form-select" id="course" required>
+                                        <option selected disabled>Please Select Course</option>
+                                        <option value="Generic">Generic</option>
+                                    </select>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="joining-date" class="form-label">Joining Date</label>
+                                    <input type="date" class="form-control" id="joining-date" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="admission-fees" class="form-label">Admission Fees</label>
+                                    <input type="text" class="form-control" id="admission-fees" placeholder="Admission Fees" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="reference" class="form-label">Reference</label>
+                                    <input type="text" class="form-control" id="reference" placeholder="Reference Name" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="session" class="form-label">Session</label>
+                                    <select class="form-select" id="session" required>
+                                        <option selected disabled>Select Session</option>
+                                        <option value="Generic">Generic</option>
+                                    </select>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="relieving-date" class="form-label">Relieving Date</label>
+                                    <input type="date" class="form-control" id="relieving-date" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="monthly-fees" class="form-label">Monthly Fees</label>
+                                    <input type="text" class="form-control" id="monthly-fees" placeholder="Monthly Fees" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="ref-contact" class="form-label">Reference Contact</label>
+                                    <input type="text" class="form-control" id="ref-contact" placeholder="Reference Contact Number" required>
+                                </div>
+        
+                                <!-- Biodata Section -->
+                                <h4 class="card-title mt-5">Student's Biodata</h4>
+                                <hr class="my-2">
+        
+                                <div class="col-md-6">
+                                    <label for="candidate-name" class="form-label">Candidate Name</label>
+                                    <input type="text" class="form-control" id="candidate-name" placeholder="Candidate Name" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="dob" class="form-label">DOB</label>
+                                    <input type="date" class="form-control" id="dob" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="domicile" class="form-label">Domicile</label>
+                                    <select class="form-select" id="domicile" required>
+                                        <option selected disabled>Select Domicile</option>
+                                        <option value="Generic">Generic</option>
+                                    </select>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="religion" class="form-label">Religion</label>
+                                    <select class="form-select" id="religion" required>
+                                        <option selected disabled>Select Religion</option>
+                                        <option value="Generic">Generic</option>
+                                    </select>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="contact" class="form-label">Contact</label>
+                                    <input type="text" class="form-control" id="contact" placeholder="Contact" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="pnc-reg" class="form-label">PNC Registration</label>
+                                    <input type="text" class="form-control" id="pnc-reg" placeholder="PNC Registration" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="pnc-pre-reg" class="form-label">PNC Pre Registration</label>
+                                    <input type="text" class="form-control" id="pnc-pre-reg" placeholder="PNC Pre Registration" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="board-enroll" class="form-label">Board Enrollment</label>
+                                    <input type="text" class="form-control" id="board-enroll" placeholder="Board Enrollment Number" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="transcript" class="form-label">Upload Transcript</label>
+                                    <input type="file" class="form-control" id="transcript" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="father-name" class="form-label">Father's Name</label>
+                                    <input type="text" class="form-control" id="father-name" placeholder="Father's Name" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="father-contact" class="form-label">Father's Contact</label>
+                                    <input type="text" class="form-control" id="father-contact" placeholder="Father's Contact" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="gender" class="form-label">Gender</label>
+                                    <select class="form-select" id="gender" required>
+                                        <option selected disabled>Select Gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="nationality" class="form-label">Nationality</label>
+                                    <select class="form-select" id="nationality" required>
+                                        <option selected disabled>Select Nationality</option>
+                                        <option value="Pakistani">Pakistani</option>
+                                    </select>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="blood-group" class="form-label">Blood Group</label>
+                                    <select class="form-select" id="blood-group" required>
+                                        <option selected disabled>Select Blood Group</option>
+                                        <option value="O+">O+</option>
+                                        <option value="A+">A+</option>
+                                    </select>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="student-cnic" class="form-label">CNIC</label>
+                                    <input type="text" class="form-control" id="student-cnic" placeholder="Enter CNIC" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="student-email" class="form-label">Student Email</label>
+                                    <input type="email" class="form-control" id="student-email" placeholder="Student Email" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="post-address" class="form-label">Postal Address</label>
+                                    <input type="text" class="form-control" id="post-address" placeholder="Postal Address" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="student-image" class="form-label">Upload Student Image</label>
+                                    <input type="file" class="form-control" id="student-image" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="educational-cert" class="form-label">Upload Educational Certificates</label>
+                                    <input type="file" class="form-control" id="educational-cert" required>
+                                </div>
+        
+                                <!-- Matric (Science) -->
+                                <h4 class="card-title mt-5">Matric (Science)</h4>
+                                <hr class="my-2">
+        
+                                <div class="col-md-6">
+                                    <label for="matric-year" class="form-label">Passing Year</label>
+                                    <select class="form-select" id="matric-year" required>
+                                        <option selected disabled>Select Passing Year</option>
+                                        <option value="Generic">Generic</option>
+                                    </select>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="matric-total-marks" class="form-label">Total Marks</label>
+                                    <input type="text" class="form-control" id="matric-total-marks" placeholder="Total Marks" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="matric-bio-marks" class="form-label">Biology Total Marks (9th+10th)</label>
+                                    <input type="text" class="form-control" id="matric-bio-marks" placeholder="Biology Total Marks" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="matric-board" class="form-label">Matric Board</label>
+                                    <select class="form-select" id="matric-board" required>
+                                        <option selected disabled>Select Board</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="matric-obtain-marks" class="form-label">Obtain Marks</label>
+                                    <input type="text" class="form-control" id="matric-obtain-marks" placeholder="Obtained Marks" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="matric-bio-obtain-marks" class="form-label">Biology Obtain Marks (9th+10th)</label>
+                                    <input type="text" class="form-control" id="matric-bio-obtain-marks" placeholder="Biology Obtained Marks" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="matric-grade" class="form-label">Grade/Division</label>
+                                    <select class="form-select" id="matric-grade" required>
+                                        <option selected disabled>Select Grade/Division</option>
+                                        <option value="Pakistani">Pakistani</option>
+                                    </select>
+                                </div>
+        
+                                <!-- Intermediate (Pre-Medical) -->
+                                <h4 class="card-title mt-5">Intermediate (Pre-Medical)</h4>
+                                <hr class="my-2">
+        
+                                <div class="col-md-6">
+                                    <label for="inter-year" class="form-label">Passing Year</label>
+                                    <select class="form-select" id="inter-year" required>
+                                        <option selected disabled>Select Passing Year</option>
+                                        <option value="Generic">Generic</option>
+                                    </select>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="inter-total-marks" class="form-label">Total Marks</label>
+                                    <input type="text" class="form-control" id="inter-total-marks" placeholder="Total Marks" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="inter-bio-marks" class="form-label">Biology Total Marks (11th+12th)</label>
+                                    <input type="text" class="form-control" id="inter-bio-marks" placeholder="Biology Total Marks" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="inter-board" class="form-label">Intermediate Board</label>
+                                    <select class="form-select" id="inter-board" required>
+                                        <option selected disabled>Select Board</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="inter-obtain-marks" class="form-label">Obtain Marks</label>
+                                    <input type="text" class="form-control" id="inter-obtain-marks" placeholder="Obtained Marks" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="inter-bio-obtain-marks" class="form-label">Biology Obtain Marks (11th+12th)</label>
+                                    <input type="text" class="form-control" id="inter-bio-obtain-marks" placeholder="Biology Obtained Marks" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="inter-grade" class="form-label">Grade/Division</label>
+                                    <select class="form-select" id="inter-grade" required>
+                                        <option selected disabled>Select Grade/Division</option>
+                                        <option value="Pakistani">Pakistani</option>
+                                    </select>
+                                </div>
+        
+                                <!-- Nursing -->
+                                <h4 class="card-title mt-5">Nursing</h4>
+                                <hr class="my-2">
+        
+                                <div class="col-md-6">
+                                    <label for="nursing-roll" class="form-label">Passing Roll NO</label>
+                                    <input type="text" class="form-control" id="nursing-roll" placeholder="Passing Roll NO" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="nursing-obtain-marks" class="form-label">Obtaine Marks:</label>
+                                    <input type="text" class="form-control" id="nursing-obtain-marks" placeholder="Obtaine Marks" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="nursing-grade" class="form-label">Grade/Division</label>
+                                    <select class="form-select" id="nursing-grade" required>
+                                        <option selected disabled>Select Grade/Division</option>
+                                        <option value="Pakistani">Pakistani</option>
+                                    </select>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="nursing-year" class="form-label">Passing Year</label>
+                                    <input type="text" class="form-control" id="nursing-year" placeholder="Passing Year" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="nursing-total-marks" class="form-label">Total Marks</label>
+                                    <input type="text" class="form-control" id="nursing-total-marks" placeholder="Total Marks" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="nursing-board" class="form-label">Nursing Board</label>
+                                    <select class="form-select" id="nursing-board" required>
+                                        <option selected disabled>Select Board</option>
+                                        <option value="Pakistani">Pakistani</option>
+                                    </select>
+                                </div>
+        
+                                <!-- PB Specialization -->
+                                <h4 class="card-title mt-5">PB Specialization</h4>
+                                <hr class="my-2">
+        
+                                <div class="col-md-6">
+                                    <label for="pb-roll" class="form-label">Passing Roll NO</label>
+                                    <input type="text" class="form-control" id="pb-roll" placeholder="Passing Roll NO" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="pb-obtain-marks" class="form-label">Obtaine Marks:</label>
+                                    <input type="text" class="form-control" id="pb-obtain-marks" placeholder="Obtaine Marks" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="pb-grade" class="form-label">Grade/Division</label>
+                                    <select class="form-select" id="pb-grade" required>
+                                        <option selected disabled>Select Grade/Division</option>
+                                        <option value="Pakistani">Pakistani</option>
+                                    </select>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="pb-specialty" class="form-label">Specialty Type</label>
+                                    <select class="form-select" id="pb-specialty" required>
+                                        <option selected disabled>Specialty</option>
+                                        <option value="Pakistani">Pakistani</option>
+                                    </select>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="pb-year" class="form-label">Passing Year</label>
+                                    <input type="text" class="form-control" id="pb-year" placeholder="Passing Year" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="pb-total-marks" class="form-label">Total Marks</label>
+                                    <input type="text" class="form-control" id="pb-total-marks" placeholder="Total Marks" required>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="pb-board" class="form-label">Nursing Board</label>
+                                    <select class="form-select" id="pb-board" required>
+                                        <option selected disabled>Select Board</option>
+                                        <option value="Pakistani">Pakistani</option>
+                                    </select>
+                                </div>
+        
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-primary">Save Record</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        
+          
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row text-body-secondary">
+              <div class="col-6 text-start">
+                <a class="text-body-secondary" href=" #">
+                  <strong>Applied</strong>
+                </a>
+              </div>
+              <div class="col-6 text-end text-body-secondary d-none d-md-block">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item">
+                    <a class="text-body-secondary" href="#">Contact</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-body-secondary" href="#">About Us</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-body-secondary" href="#"
+                      >Terms & Conditions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.datatables.net/2.1.6/js/dataTables.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
