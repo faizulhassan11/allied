@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Allied Institute Of Nursing And Health Sciences</title>
+    <title>Amazing Grace Institute Of Nursing, Karachi</title>
 
     <link
       rel="stylesheet"
@@ -606,13 +606,18 @@
                         </div>
                         <!-- Image Preview -->
                         <div class="col-md-4">
+                          <label for="photoPreview" class="form-label"
+                            ><strong>Photo Preview</strong></label
+                          >
                           <img
+                            id="photoPreview"
                             src="./images/account.png"
-                            class="img-fluid rounded-circle"
-                            style="width: 100px"
-                            alt=""
+                            alt="Photo Preview"
+                            class="img-thumbnail"
+                            style="display: block; width: 100px"
                           />
                         </div>
+
                         <!-- Submit Button -->
                         <div class="col-12 text-end">
                           <button type="submit" class="btn btn-primary">
@@ -735,5 +740,17 @@
     ></script>
     <script src="https://cdn.datatables.net/2.1.6/js/dataTables.js"></script>
     <script src="script.js"></script>
+    <script>
+      function previewImage(event) {
+        var input = event.target;
+        var reader = new FileReader();
+        reader.onload = function () {
+          var output = document.getElementById("photoPreview");
+          output.src = reader.result;
+          output.style.display = "block";
+        };
+        reader.readAsDataURL(input.files[0]);
+      }
+    </script>
   </body>
 </html>
