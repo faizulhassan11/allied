@@ -170,7 +170,7 @@
                 <a href="course.html" class="sidebar-link">Add Course </a>
               </li>
               <li class="sidebar-item">
-                <a href="academic-session.html" class="sidebar-link">Add Acedaminc Session</a>
+                <a href="academic-session.html" class="sidebar-link">Add Acedamic Session</a>
               </li>
             </ul>
           </li>
@@ -443,83 +443,71 @@
             </ul>
           </div>
         </nav>
-        
         <main class="content px-3 py-4">
             <div class="container" id="dynamic-content">
-              <!-- Fees Section -->
-              <div class="mb-3">
-                <h3 class="fw-bold fs-4 mb-3">Staff Record</h3>
-                <hr class="my-4">
-          
-                <!-- Add Student Button -->
-                <div class="row mb-4">
-                  <div class="col-12 text-end">
-                    <a href="add-staff.html" class="btn btn-sm btn-primary" title="Add Student">
-                      + Add Staff
-                    </a>
-                  </div>
-                </div>
-          
-         
-          
-               
-                <div class="row">
-                  <div class="col-12">
-                    <!-- DataTable -->
-                    <div class="table-responsive">
-                      <table id="myTable" class="table table-hover table-bordered table-striped text-center" style="width: 100%">
-                        <thead class="table-primary">
-                          <tr>
-                            <th>S.No.</th>
-                            <th>Name</th>
-                            <th>ID</th>
-                            <th>Designation</th>
-                            <th>Qualification</th>
-                            <th>Contact</th>
-                            <th>CNIC</th>
-                            <th>Photo</th>
-                            <th>Action</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>Amir Khan</td>
-                            <td>1</td>
-                            <td>Developer</td>
-                            <td>MIT</td>
-                            <td>03322251904</td>
-                            <td>4130631803181</td>
-                            <td>
-                              <img src="./images/account.png" alt="Student Photo" class="img-thumbnail border-0 bg-transparent" style="width: 50px;">
-                            </td>
-          
-                            <td>
-                              <div class="d-flex justify-content-center gap-2">
-                                
-                                <a href="edit-staff-record.html" class="btn btn-sm btn-outline-primary" title="Edit">
-                                  <i class="bi bi-pencil"></i>
-                                </a>
-                                <button class="btn btn-sm btn-outline-danger" title="Delete">
-                                  <i class="bi bi-trash"></i>
-                                </button>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+
+                         <!-- Back Button -->
+        <div class="mb-4">
+            <a href="report.html" class="btn btn-primary" >
+                <i class="bi bi-arrow-left"></i> 
+            </a>
+        </div>
+                <!-- Expenses Section -->
+                <div class="mb-3">
+                    <h3 class="fw-bold fs-4 mb-4">Photosheet List</h3>
+        
+                    <hr class="my-4">
+        
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card shadow-sm mb-4 registration-card">
+                                <div class="card-body">
+                                    <form class="row g-3">
+                                        <!-- Transaction Section -->
+                                        <div class="col-md-6 col-lg-4">
+                                            <label for="month" class="form-label">Course</label>
+                                            <select class="form-select" id="month" name="month">
+                                                <option value="">Select Month</option>
+                                                <option value="January">January</option>
+                                                <option value="February">February</option>
+                                                <option value="March">March</option>
+                                                <option value="April">April</option>
+                                                <option value="May">May</option>
+                                                <option value="June">June</option>
+                                                <option value="July">July</option>
+                                                <option value="August">August</option>
+                                                <option value="September">September</option>
+                                                <option value="October">October</option>
+                                                <option value="November">November</option>
+                                                <option value="December">December</option>
+                                            </select>
+                                        </div>
+        
+                                        <div class="col-md-6 col-lg-4">
+                                            <label for="year" class="form-label">Session</label>
+                                            <select class="form-select" id="year" name="year">
+                                                <option value="">Select Year</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2024">2024</option>
+                                                <option value="2025">2025</option>
+                                                <!-- Add more years as needed -->
+                                            </select>
+                                        </div>
+        
+                                        <div class="col-12 col-lg-4 d-flex align-items-end">
+                                            <button type="submit" class="btn btn-primary w-100">Generate Report</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </main>
-          
-         
-          
-          
-          
-          
+        </main>
+        
+        
+       
          
           
         <footer class="footer">
@@ -555,7 +543,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-
 
 
     <script

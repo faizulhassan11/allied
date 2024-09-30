@@ -448,20 +448,9 @@
             <div class="container" id="dynamic-content">
               <!-- Fees Section -->
               <div class="mb-3">
-                <h3 class="fw-bold fs-4 mb-3">Staff Record</h3>
+                <h3 class="fw-bold fs-4 mb-3">PNC Enrollment Form</h3>
+
                 <hr class="my-4">
-          
-                <!-- Add Student Button -->
-                <div class="row mb-4">
-                  <div class="col-12 text-end">
-                    <a href="add-staff.html" class="btn btn-sm btn-primary" title="Add Student">
-                      + Add Staff
-                    </a>
-                  </div>
-                </div>
-          
-         
-          
                
                 <div class="row">
                   <div class="col-12">
@@ -470,40 +459,33 @@
                       <table id="myTable" class="table table-hover table-bordered table-striped text-center" style="width: 100%">
                         <thead class="table-primary">
                           <tr>
-                            <th>S.No.</th>
-                            <th>Name</th>
+                            <th>S.No.</th>    
+                            <th>Student Name</th>
                             <th>ID</th>
-                            <th>Designation</th>
-                            <th>Qualification</th>
-                            <th>Contact</th>
-                            <th>CNIC</th>
-                            <th>Photo</th>
+                            <th>Course</th>
+                            <th>Session</th>
                             <th>Action</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
+                            <td>1</td>  
+                            <td>Abdullah</td>
                             <td>1</td>
-                            <td>Amir Khan</td>
-                            <td>1</td>
-                            <td>Developer</td>
-                            <td>MIT</td>
-                            <td>03322251904</td>
-                            <td>4130631803181</td>
-                            <td>
-                              <img src="./images/account.png" alt="Student Photo" class="img-thumbnail border-0 bg-transparent" style="width: 50px;">
-                            </td>
-          
+                            <td>General Nursing</td>
+                            <td>GBSN-2021-24</td>
                             <td>
                               <div class="d-flex justify-content-center gap-2">
-                                
-                                <a href="edit-staff-record.html" class="btn btn-sm btn-outline-primary" title="Edit">
-                                  <i class="bi bi-pencil"></i>
+                                <!-- <a href="fees-summary.html" class="btn btn-sm btn-outline-success" title="View">
+                                  <i class="bi bi-eye"></i>
+                              </a> -->
+                                <a href="generate-voucher.html" class="btn btn-sm btn-outline-primary" title="Edit">
+                                    <i class="bi bi-pencil"></i>
                                 </a>
-                                <button class="btn btn-sm btn-outline-danger" title="Delete">
-                                  <i class="bi bi-trash"></i>
-                                </button>
-                              </div>
+                                
+                            </div>
+                            
+                            
                             </td>
                           </tr>
                         </tbody>
@@ -511,17 +493,13 @@
                     </div>
                   </div>
                 </div>
+          
               </div>
             </div>
           </main>
           
-         
           
-          
-          
-          
-         
-          
+                    
         <footer class="footer">
           <div class="container-fluid">
             <div class="row text-body-secondary">
