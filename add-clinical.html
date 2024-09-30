@@ -445,53 +445,54 @@
         </nav>
         <main class="content px-3 py-4">
             <div class="container" id="dynamic-content">
-                <!-- Attendance Section -->
-                <div class="mb-4">
-                    <h3 class="fw-bold fs-4 mb-4 ">Attendance</h3>
-                    <hr class="mb-4">
+                <!-- Petty Cash Management Section -->
+                <div class="mb-3">
+                    <h3 class="fw-bold fs-4 mb-4 ">Add Clinical</h3>
+                    <hr class="my-4">
         
-                    <!-- Attendance Actions Section -->
-                    <section class="mb-5">
-                        <div class="row g-3">
-                            <div class="col-12 col-md-6 col-lg-3">
-                                <a href="./add-attendence.html" class="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center shadow-sm py-3">
-                                    <i class="bi bi-book me-2"></i>
-                                    Mark Class Attendance
-                                </a>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3">
-                                <a href="add-holiday.html" class="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center shadow-sm py-3">
-                                    <i class="bi bi-journal-text me-2"></i>
-                                    Add Holiday
-                                </a>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3">
-                                <a href="add-visit.html" class="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center shadow-sm py-3">
-                                    <i class="bi bi-journal-text me-2"></i>
-                                    Add Visit
-                                </a>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3">
-                                <a href="add-clinical.html" class="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center shadow-sm py-3">
-                                    <i class="bi bi-book me-2"></i>
-                                    Add Clinical
-                                </a>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3">
-                                <a href="generate-report.html" class="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center shadow-sm py-3">
-                                    <i class="bi bi-journal-text me-2"></i>
-                                    Generate Report
-                                </a>
-                            </div>
+                    <!-- Transaction Form Section -->
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-10">
+                            <form class="row g-3">
+                                <!-- Course Selection -->
+                                <div class="col-md-3">
+                                    <label for="select-course" class="form-label fw-bold">Course</label>
+                                    <select class="form-select" aria-label="select-course" id="select-course">
+                                        <option selected disabled>Please Select Course</option>
+                                        <option value="1">Course One</option>
+                                        <option value="2">Course Two</option>
+                                        <option value="3">Course Three</option>
+                                    </select>
+                                </div>
+        
+                                <!-- Session Selection -->
+                                <div class="col-md-3">
+                                    <label for="select-session" class="form-label fw-bold">Session</label>
+                                    <select class="form-select" aria-label="select-session" id="select-session">
+                                        <option selected disabled>Please Select Session</option>
+                                        <option value="1">Session One</option>
+                                        <option value="2">Session Two</option>
+                                        <option value="3">Session Three</option>
+                                    </select>
+                                </div>
+        
+                                <!-- Date Input -->
+                                <div class="col-md-3">
+                                    <label for="edit-date" class="form-label fw-bold">Date</label>
+                                    <input type="date" class="form-control" id="edit-date">
+                                </div>
+        
+                                <!-- Submit Button -->
+                                <div class="col-md-3 d-flex align-items-end">
+                                    <button type="submit" class="btn btn-primary w-100 shadow-sm">Add Class Attendance</button>
+                                </div>
+                            </form>
                         </div>
-                    </section>
+                    </div>
                 </div>
             </div>
         </main>
         
-        
-       
-          
         
        
          
