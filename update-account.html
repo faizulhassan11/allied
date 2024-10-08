@@ -443,72 +443,88 @@
             </ul>
           </div>
         </nav>
+       
+     
         <main class="content px-3 py-4">
             <div class="container" id="dynamic-content">
-
-                   <!-- Back Button -->
-                   <div class="mb-4">
-                    <a href="academic-session.html" class="btn btn-primary" >
-                        <i class="bi bi-arrow-left"></i> 
-                    </a>
-                </div>
-
-                <!-- Petty Cash Management Section -->
-                <div class="mb-3">
-                    <h3 class="fw-bold fs-4 mb-4 ">Acedamic Session</h3>
-                    <hr class="my-4">
-        
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-lg-12">
-                            
-
-                            <div class="card shadow-sm question-card">
-                              <div class="card-body">
-                               
-                                <form class="row g-3">
-                                 
-                                   <!-- Date Input -->
-                                   <div class="col-md-3">
-                                    <label for="edit-date" class="form-label fw-bold">Acedamic Session</label>
-                                    <input type="text" class="form-control" id="edit-date">
-                                </div>
+              
+              <!-- Back Button -->
+              <div class="mb-4">
+                <a href="create-faculty-account.html" class="btn btn-primary">
+                  <i class="bi bi-arrow-left"></i>
+                </a>
+              </div>
           
-                                  <!-- Session Selection -->
-                                  <div class="col-md-3">
-                                      <label for="select-session" class="form-label fw-bold">Select Examination Board</label>
-                                      <select class="form-select" aria-label="select-session" id="select-session">
-                                          <option selected disabled>Please Select Session</option>
-                                          <option value="1">Session One</option>
-                                          <option value="2">Session Two</option>
-                                          <option value="3">Session Three</option>
-                                      </select>
-                                  </div>
+              <h3 class="card-title mb-4">Update Account</h3>
+              <hr class="my-4">
           
-                                 
-          
-                                  <!-- Submit Button -->
-                                  <div class="col-md-3 d-flex align-items-end">
-                                      <button type="submit" class="btn btn-primary w-100 shadow-sm">Add Session</button>
-                                  </div>
-                                    <!-- Submit Button -->
-                                    <div class="col-md-3 d-flex align-items-end">
-                                      <button type="submit" class="btn btn-primary w-100 shadow-sm">Cancel</button>
-                                  </div>
-                              </form>
-                               
-                              </div>
-                            </div>
-                            
-
-                        </div>
+              <!-- Lecture Registration Section -->
+              <div class="card shadow-sm mb-4 registration-card">
+                <div class="card-body">
+                  <form class="row g-3">
+                    
+                    <!-- Student ID -->
+                    <div class="col-md-6">
+                      <label for="teacher-name" class="form-label">Student ID</label>
+                      <input type="text" class="form-control" id="teacher-name" name="teacher-name" required>
                     </div>
+          
+                    <!-- EMI Number -->
+                    <div class="col-md-6">
+                      <label for="teacher-cnic" class="form-label">EMI Number</label>
+                      <input type="text" class="form-control" id="teacher-cnic" name="teacher-cnic" required>
+                    </div>
+          
+                    <!-- Role -->
+                    <div class="col-md-6">
+                      <label for="role" class="form-label">Role</label>
+                      <select class="form-select" id="role" name="role" required>
+                        <option selected disabled>Select Role</option>
+                        <option value="Teacher">Teacher</option>
+                        <option value="Admin">Admin</option>
+                      </select>
+                    </div>
+          
+                    <!-- Old Password -->
+                    <div class="col-md-6">
+                      <label for="old-password" class="form-label">Old Password</label>
+                      <input type="password" class="form-control" id="old-password" name="old-password" required>
+                    </div>
+          
+                    <!-- New Password -->
+                    <div class="col-md-6">
+                      <label for="new-password" class="form-label">New Password</label>
+                      <input type="password" class="form-control" id="new-password" name="new-password" required>
+                    </div>
+          
+                    <!-- Confirm Password -->
+                    <div class="col-md-6">
+                      <label for="confirm-password" class="form-label">Confirm Password</label>
+                      <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
+                    </div>
+          
+                    <!-- Show Password -->
+                    <div class="col-md-6 d-flex align-items-center">
+                      <input type="checkbox" id="show-password" name="show-password">
+                      <label for="show-password" class="form-label ms-2">Show Password</label>
+                    </div>
+          
+                    <!-- Submit Button -->
+                    <div class="col-md-12">
+                      <button type="submit" class="btn btn-primary">Update Password</button>
+                    </div>
+                    
+                  </form>
                 </div>
+              </div>
             </div>
-        </main>
+          </main>
+          
         
+          
+          
+      
         
-       
-         
           
         <footer class="footer">
           <div class="container-fluid">
@@ -553,5 +569,21 @@
     <script src="https://cdn.datatables.net/2.1.6/js/dataTables.js"></script>
 
     <script src="script.js"></script>
+
+      <!-- JavaScript to Show/Hide Password -->
+      <script>
+        document.getElementById('show-password').addEventListener('change', function () {
+          const oldPassword = document.getElementById('old-password');
+          const newPassword = document.getElementById('new-password');
+          const confirmPassword = document.getElementById('confirm-password');
+      
+          // Toggle password fields between text and password
+          const type = this.checked ? 'text' : 'password';
+          oldPassword.type = type;
+          newPassword.type = type;
+          confirmPassword.type = type;
+        });
+      </script>
+      
   </body>
 </html>

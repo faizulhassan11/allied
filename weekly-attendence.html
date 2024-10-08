@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazing Grace Institute Of Nursing, Karachi</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/logo.jpeg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/2.1.6/css/dataTables.dataTables.css"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="main">
+        <main class="content px-3 py-4">
+          <div class="container" id="dynamic-content">
+            <!-- Back Button -->
+            <div class="mb-4 d-print-none">
+              <a href="generate-report.html" class="btn btn-primary">
+                <i class="bi bi-arrow-left"></i>
+              </a>
+            </div>
+            <!-- Header Section -->
+            <div class="text-center mb-4">
+              <h3>
+                ATTENDANCE SHEET OF AMAZING GRACE INSTITUTE OF NURSING, KARACHI
+              </h3>
+              <hr class="my-4" />
+              <!-- Print Button -->
+              <div class="d-flex justify-content-end mb-3 d-print-none">
+                <button class="btn btn-primary" onclick="window.print()">
+                  <i class="fas fa-print"></i> Print
+                </button>
+              </div>
+              <div
+                class="d-flex flex-wrap align-items-center justify-content-center gap-3"
+              >
+                <p>Month: October</p>
+                <p>Course: Generic BSN</p>
+                <p>Year: 2024</p>
+                <p>Session: GBSN-2023-26</p>
+              </div>
+
+              <div
+                class="d-flex flex-wrap align-items-center justify-content-center gap-3 mt-3"
+              >
+                <p>P= Present</p>
+                <p>L= Leave</p>
+                <p>A= Absent</p>
+                <p>H= Holiday</p>
+                <p>S= Sunday</p>
+                <p>V= Visit</p>
+                <p>C= Clinical</p>
+              </div>
+
+              <!-- Attendance Table -->
+              <div class="table-responsive mt-4">
+                <table class="table table-bordered text-center">
+                  <thead class="table-primary">
+                    <tr>
+                      <th>S. No.</th>
+                      <th>Student Name</th>
+                      <th>Father Name</th>
+                      <th>
+                        1 <br />
+                        T
+                      </th>
+                      <th>
+                        2 <br />
+                        W
+                      </th>
+                      <th>
+                        3 <br />
+                        T
+                      </th>
+                      <th>A</th>
+                      <th>P</th>
+                      <th>L</th>
+                      <th>%</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Abbs Ali</td>
+                      <td>Shahi Deen</td>
+                      <td>**</td>
+                      <td>A</td>
+                      <td>**</td>
+                      <td>1</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0.00</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Adnan Khan</td>
+                      <td>Abdul Majeed</td>
+                      <td>**</td>
+                      <td>A</td>
+                      <td>**</td>
+                      <td>1</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0.00</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                  </tbody>
+                </table>
+              </div>
+              <!-- Footer Section -->
+              <div class="text-center my-4">
+                <p>
+                  NOTE: Errors and omissions are accepted. Students are advised
+                  to review their concerned attendance and contact the concerned
+                  coordinator for correction within 3 days after publishing;
+                  later on, no claim shall be entertained.
+                </p>
+                <p class="mb-0 fw-bold">PRINCIPAL</p>
+                <p>Allied Institute of Nursing and Health Sciences</p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.datatables.net/2.1.6/js/dataTables.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

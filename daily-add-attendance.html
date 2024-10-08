@@ -443,71 +443,78 @@
             </ul>
           </div>
         </nav>
+        
         <main class="content px-3 py-4">
             <div class="container" id="dynamic-content">
-
-                   <!-- Back Button -->
-                   <div class="mb-4">
-                    <a href="academic-session.html" class="btn btn-primary" >
+                <!-- Back Button -->
+                <div class="mb-4">
+                    <a href="add-attendence.html" class="btn btn-primary">
                         <i class="bi bi-arrow-left"></i> 
                     </a>
                 </div>
-
-                <!-- Petty Cash Management Section -->
+                <!-- Fees Section -->
                 <div class="mb-3">
-                    <h3 class="fw-bold fs-4 mb-4 ">Acedamic Session</h3>
+                    <h3 class="fw-bold fs-4 mb-4">Daily Attendance</h3>
                     <hr class="my-4">
-        
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-lg-12">
-                            
-
-                            <div class="card shadow-sm question-card">
-                              <div class="card-body">
-                               
-                                <form class="row g-3">
-                                 
-                                   <!-- Date Input -->
-                                   <div class="col-md-3">
-                                    <label for="edit-date" class="form-label fw-bold">Acedamic Session</label>
-                                    <input type="text" class="form-control" id="edit-date">
-                                </div>
-          
-                                  <!-- Session Selection -->
-                                  <div class="col-md-3">
-                                      <label for="select-session" class="form-label fw-bold">Select Examination Board</label>
-                                      <select class="form-select" aria-label="select-session" id="select-session">
-                                          <option selected disabled>Please Select Session</option>
-                                          <option value="1">Session One</option>
-                                          <option value="2">Session Two</option>
-                                          <option value="3">Session Three</option>
-                                      </select>
-                                  </div>
-          
-                                 
-          
-                                  <!-- Submit Button -->
-                                  <div class="col-md-3 d-flex align-items-end">
-                                      <button type="submit" class="btn btn-primary w-100 shadow-sm">Add Session</button>
-                                  </div>
-                                    <!-- Submit Button -->
-                                    <div class="col-md-3 d-flex align-items-end">
-                                      <button type="submit" class="btn btn-primary w-100 shadow-sm">Cancel</button>
-                                  </div>
-                              </form>
-                               
-                              </div>
+                 <div class="d-flex justify-content-end align-items-center gap-5">
+                    <div class="mb-3 text-end">
+                        <p>Generic BSN</p>
+                    </div>
+                    <div class="mb-3 text-end">
+                        <p>GBSN-2021-24</p>
+                    </div>
+                    <div class="mb-3 text-end">
+                        <p>DATED 01-10-2024</p>
+                    </div>
+                 </div>
+                    <!-- <hr class="my-4"> -->
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- DataTable -->
+                            <div class="table-responsive">
+                                <table id="myTable" class="table table-hover table-bordered table-striped text-center" style="width: 100%">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th>S.No.</th>
+                                            <th>Photo</th>
+                                            <th>ID</th>
+                                            <th>Course</th>
+                                            <th>Session</th>
+                                            <th>Student Name</th>
+                                            <th>Attendance</th>
+                                            <th>Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <img src="./images/account.png" alt="Student Photo" class="img-thumbnail border-0 bg-transparent" style="width: 50px;">
+                                            </td>
+                                            <td>1145</td>
+                                            <td>Generic BSN</td>
+                                            <td>GBSN-2024-27</td>
+                                            <td>Ahmed Khan</td>
+                                            <td>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" style="width: 100px;">
+                                                </div>
+                                            </td>
+                                            <td>01-Oct-2024</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            
-
                         </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary">Add Attendance</button>
                     </div>
                 </div>
             </div>
-        </main>
-        
-        
-       
+        </main> 
+          
+          
          
           
         <footer class="footer">
@@ -543,6 +550,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
 
 
     <script
