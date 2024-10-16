@@ -236,6 +236,7 @@
                   >Report Teacher Evaluation</a
                 >
               </li>
+
              
               <li class="sidebar-item"></li>
                 <a href="#" class="sidebar-link">Active <input
@@ -442,113 +443,108 @@
             </ul>
           </div>
         </nav>
-        
+     
         <main class="content px-3 py-4">
             <div class="container" id="dynamic-content">
-              <!-- Fees Section -->
+              <!-- Back Button -->
+              <div class="mb-4">
+                <a href="inquiries-manager.html" class="btn btn-primary">
+                  <i class="bi bi-arrow-left"></i> 
+                </a>
+              </div>
+              <!-- Library Management System Section -->
               <div class="mb-3">
-                <h3 class="fw-bold fs-4 mb-3">Inquireies Manager</h3>
-          
+                <h3 class="fw-bold fs-4 mb-4">Add a New Inquiry</h3>
                 <hr class="my-4">
-                <!-- Add Student Button -->
-                <div class="row mb-4">
-                  <div class="col-12 text-end">
-                    <a href="add-inquiries.html" class="btn btn-sm btn-primary" >
-                      + Add Inquireies
-                    </a>
-                  </div>
-                </div>
-          
-                <div class="row">
-                  <div class="col-12">
-                   
-
+                <!-- Form Section -->
+                <div class="row justify-content-center">
+                  <div class="col-lg-12">
                     <div class="card shadow-sm mb-4 registration-card">
                       <div class="card-body">
-                       
                         <form class="row g-3">
-                    
-
-                          <!-- To Date / Session Select -->
-                          <div class="col-md-6 col-lg-6">
-                            <label for="course" class="form-label">All Purposes</label>
-                            <select class="form-select" id="course" name="course">
-                              <option selected disabled>Please Purpose</option>
-                              <option value="session1">Course 1</option>
-                              <option value="session2">Course 2</option>
-                              <option value="session3">Course 3</option>
-                              <!-- Add more sessions as needed -->
+                          <!-- Visitor's Name -->
+                          <div class="col-md-6 col-lg-4">
+                            <label for="visitorName" class="form-label">Visitor's Name</label>
+                            <input class="form-control" type="text" id="visitorName" required>
+                          </div>
+                          <!-- Phone -->
+                          <div class="col-md-6 col-lg-4">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input class="form-control" type="tel" id="phone" required>
+                          </div>
+                          <!-- Email -->
+                          <div class="col-md-6 col-lg-4">
+                            <label for="email" class="form-label">Email</label>
+                            <input class="form-control" type="email" id="email" required>
+                          </div>
+                          <!-- Date -->
+                          <div class="col-md-6 col-lg-4">
+                            <label for="date" class="form-label">Date</label>
+                            <input class="form-control" type="date" id="date" required>
+                          </div>
+                          <!-- Next Follow -->
+                          <div class="col-md-6 col-lg-4">
+                            <label for="nextFollow" class="form-label">Next Follow</label>
+                            <input class="form-control" type="date" id="nextFollow" required>
+                          </div>
+                          <!-- Purpose Select -->
+                          <div class="col-md-6 col-lg-4">
+                            <label for="purpose" class="form-label">Purpose</label>
+                            <select class="form-select" id="purpose" name="purpose" required>
+                              <option selected disabled>Select Purpose</option>
+                              <option value="course1">Course 1</option>
+                              <option value="course2">Course 2</option>
+                              <option value="course3">Course 3</option>
                             </select>
                           </div>
-                   
-              
-                          <div class="col-12 col-lg-6 d-flex align-items-end">
-                            <button type="submit" class="btn btn-primary w-100">Apply Filter</button>
+                          <!-- Description -->
+                          <div class="col-md-6 col-lg-4">
+                            <label for="description" class="form-label"><strong>Details of Purpose</strong></label>
+                            <textarea class="form-control" id="description" name="description" placeholder="Enter description" rows="1" required></textarea>
+                          </div>
+                          <!-- Source Select -->
+                          <div class="col-md-6 col-lg-4">
+                            <label for="source" class="form-label">Source</label>
+                            <select class="form-select" id="source" name="source" required>
+                              <option selected disabled>Select Source</option>
+                              <option value="source1">Source 1</option>
+                              <option value="source2">Source 2</option>
+                              <option value="source3">Source 3</option>
+                            </select>
+                          </div>
+                          <!-- In Time -->
+                          <div class="col-md-6 col-lg-4">
+                            <label for="inTime" class="form-label">In Time</label>
+                            <input class="form-control" type="datetime-local" id="inTime" required>
+                          </div>
+                          <!-- Out Time -->
+                          <div class="col-md-6 col-lg-4">
+                            <label for="outTime" class="form-label">Out Time</label>
+                            <input class="form-control" type="datetime-local" id="outTime" required>
+                          </div>
+                          <!-- Attachment -->
+                          <div class="col-md-6 col-lg-4">
+                            <label for="attachment" class="form-label">Attachment</label>
+                            <input class="form-control" type="file" id="attachment">
+                          </div>
+                          <!-- Note -->
+                          <div class="col-md-6 col-lg-4">
+                            <label for="note" class="form-label"><strong>Note</strong></label>
+                            <textarea class="form-control" id="note" name="note" placeholder="Enter note" rows="1" required></textarea>
+                          </div>
+                          <!-- Upload Button -->
+                          <div class="col-md-6 col-lg-4 d-flex align-items-end">
+                            <button type="submit" class="btn btn-primary w-100">Submit Inquiry</button>
                           </div>
                         </form>
-            
                       </div>
-                  </div>
-
-                  </div>
-                </div>
-          
-                <hr class="my-4">
-              
-                <div class="row">
-                  <div class="col-12">
-                    <!-- DataTable -->
-                    <div class="table-responsive">
-                      <table id="myTable" class="table table-hover table-bordered table-striped text-center" style="width: 100%">
-                        <thead class="table-primary">
-                          <tr>
-                            <th>ID</th>
-                            <th>Visitor's Name</th>
-                            <th>Phone</th>
-                            <th>Date</th>
-                            <th>Purpose</th>
-                            <th>Source</th>
-                            <th>Document</th>
-                            <th>Action</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>ID</td>
-                            <td>Visitor's Name</td>
-                            <td>Phone</td>
-                            <td>Date</td>
-                            <td>Purpose</td>
-                            <td>Source</td>
-                            <td>Document</td>    
-                            <td>
-                              <div class="d-flex justify-content-center gap-2">
-                                <a href="view-student-record.html" class="btn btn-sm btn-outline-success" title="View">
-                                  <i class="bi bi-eye"></i>
-                                </a>
-                                <a href="edit-student-record.html" class="btn btn-sm btn-outline-primary" title="Edit">
-                                  <i class="bi bi-pencil"></i>
-                                </a>
-                                <a class="btn btn-sm btn-outline-danger" title="Delete">
-                                  <i class="bi bi-trash"></i>
-                                </a>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </main>
-          
-         
-          
-          
-          
-          
+        
          
           
         <footer class="footer">
@@ -584,7 +580,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-
 
 
     <script

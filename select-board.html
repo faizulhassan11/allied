@@ -170,7 +170,7 @@
                 <a href="course.html" class="sidebar-link">Add Course </a>
               </li>
               <li class="sidebar-item">
-                <a href="academic-session.html" class="sidebar-link">Add Acedaminc Session</a>
+                <a href="academic-session.html" class="sidebar-link">Add Acedamic Session</a>
               </li>
             </ul>
           </li>
@@ -236,6 +236,7 @@
                   >Report Teacher Evaluation</a
                 >
               </li>
+
              
               <li class="sidebar-item"></li>
                 <a href="#" class="sidebar-link">Active <input
@@ -442,114 +443,91 @@
             </ul>
           </div>
         </nav>
-        
         <main class="content px-3 py-4">
             <div class="container" id="dynamic-content">
-              <!-- Fees Section -->
-              <div class="mb-3">
-                <h3 class="fw-bold fs-4 mb-3">Inquireies Manager</h3>
-          
-                <hr class="my-4">
-                <!-- Add Student Button -->
-                <div class="row mb-4">
-                  <div class="col-12 text-end">
-                    <a href="add-inquiries.html" class="btn btn-sm btn-primary" >
-                      + Add Inquireies
+                <!-- Back Button -->
+                <div class="mb-4">
+                    <a href="verification-document.html" class="btn btn-primary">
+                        <i class="bi bi-arrow-left"></i> 
                     </a>
-                  </div>
                 </div>
-          
-                <div class="row">
-                  <div class="col-12">
-                   
-
-                    <div class="card shadow-sm mb-4 registration-card">
-                      <div class="card-body">
-                       
-                        <form class="row g-3">
+                
+                <!-- Select Board Section -->
+                <div class="mb-3">
+                    <h3 class="fw-bold fs-4 mb-4">Select Board</h3>
+                    <hr class="my-4">
                     
-
-                          <!-- To Date / Session Select -->
-                          <div class="col-md-6 col-lg-6">
-                            <label for="course" class="form-label">All Purposes</label>
-                            <select class="form-select" id="course" name="course">
-                              <option selected disabled>Please Purpose</option>
-                              <option value="session1">Course 1</option>
-                              <option value="session2">Course 2</option>
-                              <option value="session3">Course 3</option>
-                              <!-- Add more sessions as needed -->
-                            </select>
-                          </div>
-                   
-              
-                          <div class="col-12 col-lg-6 d-flex align-items-end">
-                            <button type="submit" class="btn btn-primary w-100">Apply Filter</button>
-                          </div>
-                        </form>
-            
-                      </div>
-                  </div>
-
-                  </div>
-                </div>
-          
-                <hr class="my-4">
-              
-                <div class="row">
-                  <div class="col-12">
-                    <!-- DataTable -->
-                    <div class="table-responsive">
-                      <table id="myTable" class="table table-hover table-bordered table-striped text-center" style="width: 100%">
-                        <thead class="table-primary">
-                          <tr>
-                            <th>ID</th>
-                            <th>Visitor's Name</th>
-                            <th>Phone</th>
-                            <th>Date</th>
-                            <th>Purpose</th>
-                            <th>Source</th>
-                            <th>Document</th>
-                            <th>Action</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>ID</td>
-                            <td>Visitor's Name</td>
-                            <td>Phone</td>
-                            <td>Date</td>
-                            <td>Purpose</td>
-                            <td>Source</td>
-                            <td>Document</td>    
-                            <td>
-                              <div class="d-flex justify-content-center gap-2">
-                                <a href="view-student-record.html" class="btn btn-sm btn-outline-success" title="View">
-                                  <i class="bi bi-eye"></i>
-                                </a>
-                                <a href="edit-student-record.html" class="btn btn-sm btn-outline-primary" title="Edit">
-                                  <i class="bi bi-pencil"></i>
-                                </a>
-                                <a class="btn btn-sm btn-outline-danger" title="Delete">
-                                  <i class="bi bi-trash"></i>
-                                </a>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card shadow-sm mb-4 registration-card">
+                                <div class="card-body">
+                                    <!-- First Row (Matric and Intermediate Board) -->
+                                    <div class="row g-4">
+                                        <!-- Matric Board Section -->
+                                        <div class="col-md-6">
+                                            <label for="matricYear" class="form-label">Matric Board</label>
+                                            <select class="form-select" id="matricYear" name="matricYear">
+                                                <option value="">Select Year</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2024">2024</option>
+                                                <option value="2025">2025</option>
+                                            </select>
+                                            <button type="submit" class="btn btn-primary w-100 mt-3">Generate</button>
+                                        </div>
+        
+                                        <!-- Intermediate Board Section -->
+                                        <div class="col-md-6 ">
+                                            <label for="intermediateYear" class="form-label">Intermediate Board</label>
+                                            <select class="form-select" id="intermediateYear" name="intermediateYear">
+                                                <option value="">Select Year</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2024">2024</option>
+                                                <option value="2025">2025</option>
+                                            </select>
+                                            <button type="submit" class="btn btn-primary w-100 mt-3">Generate</button>
+                                        </div>
+        
+                                        <!-- Empty Column for Spacing -->
+                                        <div class="col-md-6 col-lg-4 d-none d-lg-block"></div>
+                                    </div>
+        
+                                    <!-- Second Row (Diploma Nursing and 4th Year Nursing Board) -->
+                                    <div class="row g-4 mt-4">
+                                        <!-- Diploma Nursing Board Section -->
+                                        <div class="col-md-6 ">
+                                            <label for="diplomaNursingYear" class="form-label">Diploma Nursing Board</label>
+                                            <select class="form-select" id="diplomaNursingYear" name="diplomaNursingYear">
+                                                <option value="">Select Year</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2024">2024</option>
+                                                <option value="2025">2025</option>
+                                            </select>
+                                            <button type="submit" class="btn btn-primary w-100 mt-3">Generate</button>
+                                        </div>
+        
+                                        <!-- 4th Year Nursing Board Section -->
+                                        <div class="col-md-6">
+                                            <label for="fourthYearNursingYear" class="form-label">4th Year Nursing Board</label>
+                                            <select class="form-select" id="fourthYearNursingYear" name="fourthYearNursingYear">
+                                                <option value="">Select Year</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2024">2024</option>
+                                                <option value="2025">2025</option>
+                                            </select>
+                                            <button type="submit" class="btn btn-primary w-100 mt-3">Generate</button>
+                                        </div>
+        
+                                        <!-- Empty Column for Spacing -->
+                                        <div class="col-md-6 col-lg-4 d-none d-lg-block"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </main>
-          
-         
-          
-          
-          
-          
-         
+        </main>
+        
           
         <footer class="footer">
           <div class="container-fluid">
@@ -584,7 +562,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-
 
 
     <script
